@@ -1,0 +1,109 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,100;1,200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1517&q=80');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100vw 150vh;
+}
+#title{
+    display: none;
+}
+.container {
+    padding-top: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.label{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.label h1{
+    width: fit-content;
+    padding: 1rem 8rem;
+    text-align: center;
+    width: 15rem;
+    height: 5rem;
+}
+.label  p{
+    font-size: 3rem;
+    color: #fff;
+}
+.label  h1,.inpField p{
+    font-size: 3rem;
+    color: #fff;
+}
+.inputField input{
+    width: 13rem;
+    height: 3rem;
+    font-size:2rem;
+    font-weight:lighter;
+    color: #6b5e5e;
+    border-radius: 50px;
+    margin:0 4rem;
+}
+#container_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.time {
+    width: 50px;
+    height: 40px;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#container_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container_btn .btn{
+    padding: 1rem 5rem;
+    margin: 3rem 1rem;
+    font-size: 16px;
+    background-color: #434743;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #030e04;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+@media (max-width:768px) {
+    #title{
+        display: block;
+        padding-top: 10vh;
+        text-align: center;
+        color: #fff;
+        font-size: 2.6rem;
+    }
+    .container {
+        padding-top: 10vh;
+    }
+    .inputField input{
+        margin:0 8rem;
+    }
+    .label h1{
+        padding: 1rem 12rem;
+    }
+}
